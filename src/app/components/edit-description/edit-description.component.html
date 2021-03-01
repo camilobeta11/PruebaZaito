@@ -1,0 +1,29 @@
+<ion-header no-border [translucent]="true" mode="ios">
+  <ion-toolbar class="header">
+    <ion-buttons slot="start" class="iconCancel">
+      <ion-button (click)="cancel()">
+        <ion-icon name="chevron-back-outline"
+                  slot="end">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit a dolor porro repellendus animi quidem impedit consectetur enim architecto odio, eius aliquid. Tempore dolore deleniti, quaerat eum animi modi aut?"
+                  auto-grow="true"
+                  clear-on-edit="true"
+                  [(ngModel)]="description">     
+  </ion-textarea>
+  
+    <ion-footer>  
+      <ion-toolbar>
+        <ion-label (click)="dataModal()" slot="end">
+          Listo  
+        </ion-label>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-list>
+</ion-content>
